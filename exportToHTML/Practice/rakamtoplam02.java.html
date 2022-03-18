@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>rakamtoplam02.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #0033b3;}
+.s1 { color: #080808;}
+.s2 { color: #067d17;}
+.s3 { color: #1750eb;}
+.s4 { color: #8c8c8c; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+rakamtoplam02.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">Practice;</span>
+
+<span class="s0">import </span><span class="s1">java.util.Scanner;</span>
+
+<span class="s0">public class </span><span class="s1">rakamtoplam02 {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Bir Sayı Giriniz&quot;</span><span class="s1">);</span>
+        <span class="s0">int </span><span class="s1">binler,yuzler,onlar,birler;</span>
+        <span class="s1">Scanner klavye=</span><span class="s0">new </span><span class="s1">Scanner(System.in);</span>
+        <span class="s0">int </span><span class="s1">sayi=klavye.nextInt();</span>
+
+        <span class="s1">binler=sayi/</span><span class="s3">1000</span><span class="s1">;   </span><span class="s4">// Binler Basamağı</span>
+        <span class="s1">sayi=sayi-(</span><span class="s3">1000</span><span class="s1">*binler);</span>
+
+        <span class="s1">yuzler=sayi/</span><span class="s3">100</span><span class="s1">;   </span><span class="s4">// Yüzler Basamağı</span>
+        <span class="s1">sayi=sayi-(</span><span class="s3">100</span><span class="s1">*yuzler);</span>
+
+        <span class="s1">onlar=sayi/</span><span class="s3">10</span><span class="s1">;    </span><span class="s4">// Onlar Basamağı</span>
+        <span class="s1">sayi=sayi-(</span><span class="s3">10</span><span class="s1">*onlar);</span>
+
+        <span class="s1">birler=sayi;     </span><span class="s4">// Birler Basamağı</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Sayının Basamaklarına Ayrılmış Hali &quot; </span><span class="s1">+ binler + </span><span class="s2">&quot; &quot; </span><span class="s1">+ yuzler + </span><span class="s2">&quot; &quot; </span><span class="s1">+ onlar + </span><span class="s2">&quot; &quot; </span><span class="s1">+ birler);</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Binler Basamağı : &quot; </span><span class="s1">+ binler);</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Yüzler Basamağı : &quot; </span><span class="s1">+ yuzler);</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Onlar Basamağı  : &quot; </span><span class="s1">+ onlar);</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Birler Basamağı : &quot; </span><span class="s1">+ birler);</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;basamaklardaki rakamlar toplamı: &quot;</span><span class="s1">+ (binler+yuzler+onlar+birler));</span>
+
+        <span class="s1">rakamtoplayan(sayi);</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private static void </span><span class="s1">rakamtoplayan(</span><span class="s0">int </span><span class="s1">sayi) {</span><span class="s0">if </span><span class="s1">(sayi &gt; </span><span class="s3">100</span><span class="s1">) {</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;basamaktaki rakamlar toplami:&quot;</span><span class="s1">+ (binler+yuzler+onlar+birler));</span>
+    <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;birler basamagı:&quot;</span><span class="s1">+ birler);}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
