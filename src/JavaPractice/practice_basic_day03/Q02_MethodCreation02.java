@@ -9,5 +9,23 @@ public class Q02_MethodCreation02 {
         output: abcd
      */
 
+    public static void main(String[] args) {
 
+        String str= "aaabbbcccdddeee";
+
+        String sonuc="";
+
+        for (int i = 0; i < str.length(); i++) {
+            if (!sonuc.contains(str.substring(i,i+1))){ sonuc+= str.substring(i,i+1);
+
+
+
+        }
+
+        }
+
+        System.out.println(sonuc);
+
+
+    }
 }

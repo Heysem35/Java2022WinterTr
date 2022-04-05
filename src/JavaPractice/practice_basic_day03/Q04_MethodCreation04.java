@@ -1,8 +1,9 @@
 package JavaPractice.practice_basic_day03;
 
-import java.util.Scanner;
+public class Q04_MethodCreation04{
+    public static void main(String[] args) {
 
-public class Q04_MethodCreation04 {
+
         /*
          * String parametreli bir metod yazin ve  girililen String icindeki digitlerin
          * toplamini dondursun.
@@ -34,5 +35,36 @@ public class Q04_MethodCreation04 {
 
 	        */
 
+    String str= "a31bc3de4";
+    String rakamlar= "";
+    int rakamlarToplami=0;
 
-}
+
+
+
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i))){ rakamlar+=str.substring(i,i+1);}
+
+        }
+
+        System.out.println("değişkendeki rakamlar= "+rakamlar);
+
+        for (int i = 0; i < rakamlar.length(); i++) { rakamlarToplami+= Integer.parseInt(rakamlar.substring(i,i+1));
+
+        }
+        System.out.println("rakamların toplamı:" + rakamlarToplami);
+
+
+    }
+        }
+
+
+
+
+
+
+
+
+
+
+
